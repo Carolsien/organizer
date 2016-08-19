@@ -2,46 +2,32 @@
 @import "bootstrap";
 
 /* header */
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #9078AD;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
+header[role="banner"] {
+  #logo-main {
     display: block;
-    color: white;
+    margin: auto;
+  }
+}
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav {
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #6D4E90;
-}
-
-ul.topnav li a.active {
-  background-color: #6D4E90;
-}
-
-ul.topnav li.right {
-  float: right;
-}
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
 }
 
 /* body */
 
 body {
-  margin: 0;
+  margin: auto;
+  text-align: center;
 }

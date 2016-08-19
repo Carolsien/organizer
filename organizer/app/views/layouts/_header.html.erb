@@ -1,6 +1,23 @@
-<ul class="topnav">
-  <li><%= link_to "Home",   '#' %></li>
-  <li><%= link_to "Help",   '#' %></li>
-  <li class="right"><%= link_to "Log in", '#' %></li>
-  <li class="right"><%= link_to "Sign up", '#' %></li>
-</ul>
+<header role="banner">
+  <img id="logo-main" src="http://cdn.shopify.com/s/files/1/0014/2922/files/unique-wedding-bands-banner_REV.jpg" alt="Main logo">
+  <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../home/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li><%= link_to "Help",   '#' %></li>
+          <li class="right"><%= link_to "Log in", '#' %></li>
+          <li class="right"><%= link_to "Sign up", '#' %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
