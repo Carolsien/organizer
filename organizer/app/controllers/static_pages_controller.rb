@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
-  def index
+  layout "static", only: [:help, :about]
+  def help
+  end
+
+  def about
   end
 end
