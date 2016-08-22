@@ -3,23 +3,6 @@
 
 /* header */
 
-#navbar-primary.navbar-default {
-  background-color: white;
-  border: none;
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-    > li {
-      display: inline-block;
-      float: none;
-      > a {
-        padding-left: 30px;
-        padding-right: 30px;
-        }
-    }
-  }
-}
-
 /* body */
 
 body, html {
@@ -128,5 +111,22 @@ body, html {
     float: none;
     margin-top: 10px;
     border-radius: 5px;
+  }
+}
+
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
   }
 }
