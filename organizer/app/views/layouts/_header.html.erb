@@ -10,10 +10,12 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-primary-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-          <li><%= link_to "Help",   '#' %></li>
-          <li class="right"><%= link_to "Log in", '#' %></li>
-          <li class="right"><%= link_to "Sign up", '#' %></li>
+          <li><%= link_to root_path do %>
+          <i class="glyphicon glyphicon-home">Home</i>
+          <% end %></li>
+          <li><%= link_to "Help",   '/help' %></li>
+          <li><%= link_to "Log in", '/users/sign_in' %></li>
+          <li><%= link_to "Sign up", '/users/sign_up' %></li>
         </ul>
       </div>
     </div>

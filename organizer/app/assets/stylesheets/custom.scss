@@ -4,7 +4,7 @@
 /* header */
 
 #navbar-primary.navbar-default {
-  background: transparent;
+  background-color: white;
   border: none;
   .navbar-nav {
     width: 100%;
@@ -24,7 +24,9 @@
 
 body, html {
     height: 100%;
+    background:white;
 }
+
 
 .img-1, .img-2, .img-3 {
   position: relative;
@@ -46,6 +48,12 @@ body, html {
   background-image: url("church.jpg");
   min-height: 50%;
 }
+
+.img-4{
+  background-image: url("floral-pattern.jpg");
+  min-height: 50%;
+}
+
 
 .caption {
   position: absolute;
@@ -101,5 +109,24 @@ body, html {
   color: #000;
   &:hover {
     color: #000;
+  }
+}
+
+
+.devise_page {
+  margin-top: 5%;
+  margin-bottom: 10%;
+
+  text-align: center;
+  .border {
+    background-color: #ffc4d1;
+    color: black;
+    padding: 18px;
+    font-size: 20px;
+    opacity: 0.9;
+    display: inline-block;
+    float: none;
+    margin-top: 10px;
+    border-radius: 5px;
   }
 }
