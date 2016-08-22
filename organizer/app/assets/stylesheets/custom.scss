@@ -1,0 +1,105 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* header */
+
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
+}
+
+/* body */
+
+body, html {
+    height: 100%;
+}
+
+.img-1, .img-2, .img-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-1 {
+  background-image: url("rings.jpg");
+  min-height: 50%;
+}
+.img-2 {
+  background-image: url("flowers.jpg");
+  min-height: 50%;
+}
+.img-3 {
+  background-image: url("church.jpg");
+  min-height: 50%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #ffc4d1;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  opacity: 0.9;
+  display: inline-block;
+  float: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.whiteb {
+  background-color:white;
+  text-align:center;
+  height:100px;
+  opacity:0.9;
+  width:70%;
+  padding:20px;
+  border-radius:20%;
+  margin: 0 auto;
+}
+
+.whiteb {
+  padding: 15px 0;
+  .border {
+    background-color: lighten(#ffc4d1, 2%);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    opacity: 0.9;
+    display: inline-block;
+    float: none;
+    margin-top: 0;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+}
+
+.link-text {
+  color: #000;
+  &:hover {
+    color: #000;
+  }
+}
