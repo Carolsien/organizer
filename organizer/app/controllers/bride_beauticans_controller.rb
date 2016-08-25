@@ -28,7 +28,7 @@ class BrideBeauticansController < ApplicationController
 
     respond_to do |format|
       if @bride_beautican.save
-        format.html { redirect_to @bride_beautican, notice: 'Bride beautican was successfully created.' }
+        format.html { redirect_to @bride_beautican, notice: 'Dane kosmetyczki zostały dodane.' }
         format.json { render :show, status: :created, location: @bride_beautican }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class BrideBeauticansController < ApplicationController
   def update
     respond_to do |format|
       if @bride_beautican.update(bride_beautican_params)
-        format.html { redirect_to @bride_beautican, notice: 'Bride beautican was successfully updated.' }
+        format.html { redirect_to @bride_beautican, notice: 'Dane kosmetyczki zostały edytowane.' }
         format.json { render :show, status: :ok, location: @bride_beautican }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class BrideBeauticansController < ApplicationController
   def destroy
     @bride_beautican.destroy
     respond_to do |format|
-      format.html { redirect_to bride_beauticans_url, notice: 'Bride beautican was successfully destroyed.' }
+      format.html { redirect_to bride_beauticans_url, notice: 'Dane kosmetyczki zostały usunięte.' }
       format.json { head :no_content }
     end
   end

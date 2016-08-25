@@ -28,7 +28,7 @@ class BrideHairdressersController < ApplicationController
 
     respond_to do |format|
       if @bride_hairdresser.save
-        format.html { redirect_to @bride_hairdresser, notice: 'Bride hairdresser was successfully created.' }
+        format.html { redirect_to @bride_hairdresser, notice: 'Dane fryzjera zostały dodane.' }
         format.json { render :show, status: :created, location: @bride_hairdresser }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class BrideHairdressersController < ApplicationController
   def update
     respond_to do |format|
       if @bride_hairdresser.update(bride_hairdresser_params)
-        format.html { redirect_to @bride_hairdresser, notice: 'Bride hairdresser was successfully updated.' }
+        format.html { redirect_to @bride_hairdresser, notice: 'Dane fryzjera zostały edytowane.' }
         format.json { render :show, status: :ok, location: @bride_hairdresser }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class BrideHairdressersController < ApplicationController
   def destroy
     @bride_hairdresser.destroy
     respond_to do |format|
-      format.html { redirect_to bride_hairdressers_url, notice: 'Bride hairdresser was successfully destroyed.' }
+      format.html { redirect_to bride_hairdressers_url, notice: 'Dane fryzjera zostały usunięte.' }
       format.json { head :no_content }
     end
   end

@@ -28,7 +28,7 @@ class BrideDressesController < ApplicationController
 
     respond_to do |format|
       if @bride_dress.save
-        format.html { redirect_to @bride_dress, notice: 'Bride dress was successfully created.' }
+        format.html { redirect_to @bride_dress, notice: 'Suknia ślubna została dodana.' }
         format.json { render :show, status: :created, location: @bride_dress }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class BrideDressesController < ApplicationController
   def update
     respond_to do |format|
       if @bride_dress.update(bride_dress_params)
-        format.html { redirect_to @bride_dress, notice: 'Bride dress was successfully updated.' }
+        format.html { redirect_to @bride_dress, notice: 'Suknia ślubna została edytowana.' }
         format.json { render :show, status: :ok, location: @bride_dress }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class BrideDressesController < ApplicationController
   def destroy
     @bride_dress.destroy
     respond_to do |format|
-      format.html { redirect_to bride_dresses_url, notice: 'Bride dress was successfully destroyed.' }
+      format.html { redirect_to bride_dresses_url, notice: 'Suknia ślubna została usunięta.' }
       format.json { head :no_content }
     end
   end
