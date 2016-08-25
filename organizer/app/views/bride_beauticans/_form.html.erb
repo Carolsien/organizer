@@ -1,0 +1,37 @@
+<%= form_for(bride_beautican) do |f| %>
+  <% if bride_beautican.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bride_beautican.errors.count, "error") %> prohibited this bride_beautican from being saved:</h2>
+
+      <ul>
+      <% bride_beautican.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fitting %>
+    <%= f.date_select :fitting %>
+  </div>
+
+  <div class="field">
+    <%= f.label :meeting %>
+    <%= f.date_select :meeting %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

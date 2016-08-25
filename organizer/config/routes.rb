@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :bride_beauticans
+  resources :bride_hairdressers
+  resources :bride_accessories
   resources :bride_dresses
   root 'static_pages#index'
 

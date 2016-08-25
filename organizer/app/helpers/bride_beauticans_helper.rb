@@ -1,0 +1,2 @@
+module BrideBeauticansHelper
+end

@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160825134009) do
+ActiveRecord::Schema.define(version: 20160825174442) do
+
+  create_table "bride_accessories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "color"
+    t.date     "size"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_bride_accessories_on_user_id"
+  end
+
+  create_table "bride_beauticans", force: :cascade do |t|
+    t.string   "name"
+    t.date     "fitting"
+    t.date     "meeting"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_bride_beauticans_on_user_id"
+  end
 
   create_table "bride_dresses", force: :cascade do |t|
     t.string   "model"
@@ -20,6 +40,16 @@ ActiveRecord::Schema.define(version: 20160825134009) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_bride_dresses_on_user_id"
+  end
+
+  create_table "bride_hairdressers", force: :cascade do |t|
+    t.string   "name"
+    t.date     "fitting"
+    t.date     "meeting"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_bride_hairdressers_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

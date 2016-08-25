@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bride_accessory.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @bride_accessory.color %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @bride_accessory.size %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @bride_accessory.user %>
+</p>
+
+<%= link_to 'Edit', edit_bride_accessory_path(@bride_accessory) %> |
+<%= link_to 'Back', bride_accessories_path %>

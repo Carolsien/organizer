@@ -7,6 +7,9 @@ class StaticPagesController < ApplicationController
   end
 
   def bride
-    @bride_dresses = BrideDress.all
+    @bride_dresses = BrideDress.where(user_id: current_user.id)
+    @bride_accessories = BrideAccessory.where(user_id: current_user.id)
+    @bride_hairdressers = BrideHairdresser.where(user_id: current_user.id)
+    @bride_beauticans = BrideBeautican.where(user_id: current_user.id)
   end
 end

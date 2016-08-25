@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bride Beauticans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Fitting</th>
+      <th>Meeting</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bride_beauticans.each do |bride_beautican| %>
+      <tr>
+        <td><%= bride_beautican.name %></td>
+        <td><%= bride_beautican.fitting %></td>
+        <td><%= bride_beautican.meeting %></td>
+        <td><%= bride_beautican.user %></td>
+        <td><%= link_to 'Show', bride_beautican %></td>
+        <td><%= link_to 'Edit', edit_bride_beautican_path(bride_beautican) %></td>
+        <td><%= link_to 'Destroy', bride_beautican, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bride Beautican', new_bride_beautican_path %>

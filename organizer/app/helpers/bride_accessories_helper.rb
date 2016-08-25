@@ -1,0 +1,2 @@
+module BrideAccessoriesHelper
+end

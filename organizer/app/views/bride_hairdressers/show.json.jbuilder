@@ -1,0 +1,1 @@
+json.partial! "bride_hairdressers/bride_hairdresser", bride_hairdresser: @bride_hairdresser
