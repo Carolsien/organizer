@@ -11,12 +11,23 @@
     <div class="collapse navbar-collapse" id="navbar-primary-collapse">
       <ul class="nav navbar-nav">
         <li><%= link_to root_path do %>
-        <i class="glyphicon glyphicon-home">Home </i>
+        <i class="glyphicon glyphicon-home">Strona główna </i>
         <% end %></li>
-        <li><%= link_to "About",   '/about' %></li>
-        <li><%= link_to "Help",   '/help' %></li>
-        <li><%= link_to "Log in", '/users/sign_in' %></li>
-        <li><%= link_to "Sign up", '/users/sign_up' %></li>
+        <li><%= link_to "O stronie",   '/about' %></li>
+        <li><%= link_to "Pomoc",   '/help' %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "Panna młoda", '/bride' %></li>
+          <li><%= link_to "Pan młody", '#' %></li>
+          <li><%= link_to "Kościół", '#' %></li>
+          <li><%= link_to "Wesele", '#' %></li>
+          <li><%= link_to "Goście", '#' %></li>
+          <li>
+            <%= link_to "Wyloguj", destroy_user_session_path, :metod => :delete %>
+          </li>
+        <% else %>
+        <li><%= link_to "Logowanie", '/users/sign_in' %></li>
+        <li><%= link_to "Rejestracja", '/users/sign_up' %></li>
+        <% end %>
       </ul>
     </div>
   </div>
