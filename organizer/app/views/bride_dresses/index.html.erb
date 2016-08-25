@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Bride Dresses</h1>
+<h1>Suknia ślubna</h1>
 
 <table>
   <thead>
     <tr>
       <th>Model</th>
-      <th>Size</th>
-      <th>Fitting</th>
-      <th>User</th>
+      <th>Rozmiar</th>
+      <th>Data przymiarki</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +18,6 @@
         <td><%= bride_dress.model %></td>
         <td><%= bride_dress.size %></td>
         <td><%= bride_dress.fitting %></td>
-        <td><%= bride_dress.user %></td>
         <td><%= link_to 'Show', bride_dress %></td>
         <td><%= link_to 'Edit', edit_bride_dress_path(bride_dress) %></td>
         <td><%= link_to 'Destroy', bride_dress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +28,5 @@
 
 <br>
 
-<%= link_to 'New Bride Dress', new_bride_dress_path %>
+<%= link_to 'Dodaj', new_bride_dress_path %> |
+<%= link_to 'Wstecz', bride_path %>

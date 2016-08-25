@@ -1,24 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nazwa:</strong>
   <%= @bride_hairdresser.name %>
 </p>
 
 <p>
-  <strong>Fitting:</strong>
+  <strong>Wizyta próbna:</strong>
   <%= @bride_hairdresser.fitting %>
 </p>
 
 <p>
-  <strong>Meeting:</strong>
+  <strong>Wizyta w dniu ślubu:</strong>
   <%= @bride_hairdresser.meeting %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @bride_hairdresser.user %>
-</p>
-
-<%= link_to 'Edit', edit_bride_hairdresser_path(@bride_hairdresser) %> |
-<%= link_to 'Back', bride_hairdressers_path %>
+<%= link_to 'Edytuj', edit_bride_hairdresser_path(@bride_hairdresser) %> |
+<%= link_to 'Wstecz', bride_hairdressers_path %>

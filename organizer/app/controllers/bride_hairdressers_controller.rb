@@ -1,6 +1,6 @@
 class BrideHairdressersController < ApplicationController
   before_action :set_bride_hairdresser, only: [:show, :edit, :update, :destroy]
-
+  layout "static"
   # GET /bride_hairdressers
   # GET /bride_hairdressers.json
   def index

@@ -1,24 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nazwa:</strong>
   <%= @bride_beautican.name %>
 </p>
 
 <p>
-  <strong>Fitting:</strong>
+  <strong>Wizyta próbna:</strong>
   <%= @bride_beautican.fitting %>
 </p>
 
 <p>
-  <strong>Meeting:</strong>
+  <strong>Wizyta w dniu ślubu:</strong>
   <%= @bride_beautican.meeting %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @bride_beautican.user %>
-</p>
-
-<%= link_to 'Edit', edit_bride_beautican_path(@bride_beautican) %> |
-<%= link_to 'Back', bride_beauticans_path %>
+<%= link_to 'Edytuj', edit_bride_beautican_path(@bride_beautican) %> |
+<%= link_to 'Wstecz', bride_beauticans_path %>

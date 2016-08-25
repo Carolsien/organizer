@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Bride Accessories</h1>
+<h1>Akcesoria Panny Młodej</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Color</th>
-      <th>Size</th>
-      <th>User</th>
+      <th>Nazwa</th>
+      <th>Kolor</th>
+      <th>Rozmiar</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,10 +18,9 @@
         <td><%= bride_accessory.name %></td>
         <td><%= bride_accessory.color %></td>
         <td><%= bride_accessory.size %></td>
-        <td><%= bride_accessory.user %></td>
         <td><%= link_to 'Show', bride_accessory %></td>
         <td><%= link_to 'Edit', edit_bride_accessory_path(bride_accessory) %></td>
-        <td><%= link_to 'Destroy', bride_accessory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', bride_accessory, method: :delete, data: { confirm: 'Jesteś pewny/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +28,5 @@
 
 <br>
 
-<%= link_to 'New Bride Accessory', new_bride_accessory_path %>
+<%= link_to 'Dodaj', new_bride_accessory_path %> |
+<%= link_to 'Wstecz', bride_path %>
