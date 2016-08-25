@@ -89,6 +89,22 @@ body, html {
   }
 }
 
+.whiteb {
+  padding: 15px 0;
+  .border-black {
+    background-color: lighten(#ffc4d1, 2%);
+    color: black;
+    padding: 18px;
+    font-size: 25px;
+    opacity: 0.9;
+    display: inline-block;
+    float: none;
+    margin-top: 0;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+}
+
 .link-text {
   color: #000;
   &:hover {
