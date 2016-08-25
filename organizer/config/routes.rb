@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :bride_dresses
   root 'static_pages#index'
 
   get   'help'    => 'static_pages#help'

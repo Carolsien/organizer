@@ -7,5 +7,6 @@ class StaticPagesController < ApplicationController
   end
 
   def bride
+    @bride_dresses = BrideDress.all
   end
 end

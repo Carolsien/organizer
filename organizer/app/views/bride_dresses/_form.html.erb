@@ -1,0 +1,37 @@
+<%= form_for(bride_dress) do |f| %>
+  <% if bride_dress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bride_dress.errors.count, "error") %> prohibited this bride_dress from being saved:</h2>
+
+      <ul>
+      <% bride_dress.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :model %>
+    <%= f.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :size %>
+    <%= f.number_field :size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fitting %>
+    <%= f.date_select :fitting %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

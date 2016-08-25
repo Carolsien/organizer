@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: MyString
+  size: 1
+  fitting: 2016-08-25
+  user: one
+
+two:
+  model: MyString
+  size: 1
+  fitting: 2016-08-25
+  user: two
