@@ -18,9 +18,9 @@
         <td><%= bride_accessory.name %></td>
         <td><%= bride_accessory.color %></td>
         <td><%= bride_accessory.size %></td>
-        <td><%= link_to 'Show', bride_accessory %></td>
-        <td><%= link_to 'Edit', edit_bride_accessory_path(bride_accessory) %></td>
-        <td><%= link_to 'Destroy', bride_accessory, method: :delete, data: { confirm: 'Jesteś pewny/a?' } %></td>
+        <td><%= link_to 'Pokaż', bride_accessory %></td>
+        <td><%= link_to 'Edytuj', edit_bride_accessory_path(bride_accessory) %></td>
+        <td><%= link_to 'Usuń', bride_accessory, method: :delete, data: { confirm: 'Czy na pewno usunąć?' } %></td>
       </tr>
     <% end %>
   </tbody>

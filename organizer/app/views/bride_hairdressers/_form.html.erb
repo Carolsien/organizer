@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label "Nazwa" %>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= f.label :fitting %>
+    <%= f.label "Wizyta próbna" %>
     <%= f.date_select :fitting %>
   </div>
 
   <div class="field">
-    <%= f.label :meeting %>
+    <%= f.label "Wizyta w dniu ślubu" %>
     <%= f.date_select :meeting %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Zatwierdź"%>
   </div>
 <% end %>
