@@ -94,14 +94,13 @@ body, html {
   .border-black {
     background-color: lighten(#ffc4d1, 2%);
     color: black;
-    padding: 18px;
+    padding: 8%;
     font-size: 25px;
     opacity: 0.9;
     display: inline-block;
     float: none;
-    margin-top: 0;
+    margin: auto;
     border-radius: 5px;
-    margin-left: 5px;
   }
 }
 
