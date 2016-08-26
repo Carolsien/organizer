@@ -13,7 +13,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(Zostaw puste, jeśli nie chcesz zmienić hasła)</i><br />
+    <%= f.label "Hasło" %> <i>(Zostaw puste, jeśli nie chcesz zmienić hasła)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
@@ -22,17 +22,17 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label "Potwierdź hasło" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(wprowadź aktualne hasło)</i><br />
+    <%= f.label "Stare hasło" %> <i>(wprowadź aktualne hasło)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Zapisz" %>
   </div>
 <% end %>
 
