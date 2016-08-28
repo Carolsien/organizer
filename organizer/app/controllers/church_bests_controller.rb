@@ -25,7 +25,7 @@ class ChurchBestsController < ApplicationController
   # POST /church_bests
   # POST /church_bests.json
   def create
-    @church_best = ChurchBest.new(church_best_params)
+    @church_best = ChurchBest.new(church_best_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @church_best.save

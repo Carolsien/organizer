@@ -25,7 +25,7 @@ class ChurchCeremoniesController < ApplicationController
   # POST /church_ceremonies
   # POST /church_ceremonies.json
   def create
-    @church_ceremony = ChurchCeremony.new(church_ceremony_params)
+    @church_ceremony = ChurchCeremony.new(church_ceremony_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @church_ceremony.save

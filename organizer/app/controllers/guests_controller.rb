@@ -25,7 +25,7 @@ class GuestsController < ApplicationController
   # POST /guests
   # POST /guests.json
   def create
-    @guest = Guest.new(guest_params)
+    @guest = Guest.new(guest_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @guest.save

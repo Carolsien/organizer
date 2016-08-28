@@ -25,7 +25,7 @@ class WeddingServicesController < ApplicationController
   # POST /wedding_services
   # POST /wedding_services.json
   def create
-    @wedding_service = WeddingService.new(wedding_service_params)
+    @wedding_service = WeddingService.new(wedding_service_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @wedding_service.save

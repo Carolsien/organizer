@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160828192033) do
   create_table "bride_accessories", force: :cascade do |t|
     t.string   "name"
     t.string   "color"
-    t.integer  "size"
+    t.date     "size"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

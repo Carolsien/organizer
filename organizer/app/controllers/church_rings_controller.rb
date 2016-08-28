@@ -25,7 +25,7 @@ class ChurchRingsController < ApplicationController
   # POST /church_rings
   # POST /church_rings.json
   def create
-    @church_ring = ChurchRing.new(church_ring_params)
+    @church_ring = ChurchRing.new(church_ring_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @church_ring.save

@@ -25,7 +25,7 @@ class GroomSuitsController < ApplicationController
   # POST /groom_suits
   # POST /groom_suits.json
   def create
-    @groom_suit = GroomSuit.new(groom_suit_params)
+    @groom_suit = GroomSuit.new(groom_suit_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @groom_suit.save

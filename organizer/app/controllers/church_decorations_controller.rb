@@ -25,7 +25,7 @@ class ChurchDecorationsController < ApplicationController
   # POST /church_decorations
   # POST /church_decorations.json
   def create
-    @church_decoration = ChurchDecoration.new(church_decoration_params)
+    @church_decoration = ChurchDecoration.new(church_decoration_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @church_decoration.save

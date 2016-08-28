@@ -25,7 +25,7 @@ class WeddingDecorationsController < ApplicationController
   # POST /wedding_decorations
   # POST /wedding_decorations.json
   def create
-    @wedding_decoration = WeddingDecoration.new(wedding_decoration_params)
+    @wedding_decoration = WeddingDecoration.new(wedding_decoration_params.merge(user_id: current_user.id))
 
     respond_to do |format|
       if @wedding_decoration.save
