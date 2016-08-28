@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imie:</strong>
+  <%= @church_best.name %>
+</p>
+
+<p>
+  <strong>Nazwisko:</strong>
+  <%= @church_best.surname %>
+</p>
+
+<%= link_to 'Edytuj', edit_church_best_path(@church_best) %> |
+<%= link_to 'Wroc', church_bests_path %>

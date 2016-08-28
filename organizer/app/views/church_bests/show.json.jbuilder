@@ -1,0 +1,1 @@
+json.partial! "church_bests/church_best", church_best: @church_best

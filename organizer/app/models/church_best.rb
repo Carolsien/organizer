@@ -1,0 +1,2 @@
+class ChurchBest < ApplicationRecord
+end

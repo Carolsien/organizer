@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :church_bests
   resources :church_decorations
   resources :church_ceremonies
   resources :guests
