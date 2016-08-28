@@ -1,0 +1,1 @@
+json.partial! "wedding_services/wedding_service", wedding_service: @wedding_service

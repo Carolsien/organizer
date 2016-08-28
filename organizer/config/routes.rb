@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :wedding_services
   resources :wedding_decorations
   resources :wedding_rooms
   resources :church_rings

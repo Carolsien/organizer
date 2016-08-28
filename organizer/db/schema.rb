@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160828162953) do
+ActiveRecord::Schema.define(version: 20160828163842) do
 
   create_table "bride_accessories", force: :cascade do |t|
     t.string   "name"
@@ -118,6 +118,14 @@ ActiveRecord::Schema.define(version: 20160828162953) do
   create_table "wedding_rooms", force: :cascade do |t|
     t.string   "name"
     t.text     "adress"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "wedding_services", force: :cascade do |t|
+    t.string   "who"
+    t.text     "name"
+    t.text     "contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

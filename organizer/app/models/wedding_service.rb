@@ -1,0 +1,2 @@
+class WeddingService < ApplicationRecord
+end

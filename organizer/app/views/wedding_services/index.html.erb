@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Obsluga</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Kto</th>
+      <th>Nazwa</th>
+      <th>Kontakt</th>
+      <th colspan="3">Opcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wedding_services.each do |wedding_service| %>
+      <tr>
+        <td><%= wedding_service.who %></td>
+        <td><%= wedding_service.name %></td>
+        <td><%= wedding_service.contact %></td>
+        <td><%= link_to 'Pokaz', wedding_service %></td>
+        <td><%= link_to 'Edytuj', edit_wedding_service_path(wedding_service) %></td>
+        <td><%= link_to 'Usun', wedding_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nowa obsluga sali', new_wedding_service_path %>

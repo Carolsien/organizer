@@ -1,0 +1,32 @@
+<%= form_for(wedding_service) do |f| %>
+  <% if wedding_service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wedding_service.errors.count, "error") %> prohibited this wedding_service from being saved:</h2>
+
+      <ul>
+      <% wedding_service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :who, 'Kto' %>
+    <%= f.text_field :who %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name,'Nazwa' %>
+    <%= f.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact, 'Kontakt' %>
+    <%= f.text_area :contact %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Potwierdz' %>
+  </div>
+<% end %>
