@@ -14,21 +14,21 @@ class StaticPagesController < ApplicationController
   end
 
   def church
-    @church_ceremonies = ChurchCeremony.all
-    @church_decorations = ChurchDecoration.all
-    @church_bests = ChurchBest.all
-    @church_rings = ChurchRing.all
+    @church_ceremonies = ChurchCeremony.where(user_id: current_user.id)
+    @church_decorations = ChurchDecoration.where(user_id: current_user.id)
+    @church_bests = ChurchBest.where(user_id: current_user.id)
+    @church_rings = ChurchRing.where(user_id: current_user.id)
   end
 
   def wedding
-    @wedding_rooms = WeddingRoom.all
-    @wedding_decorations = WeddingDecoration.all
-    @wedding_services = WeddingService.all
+    @wedding_rooms = WeddingRoom.where(user_id: current_user.id)
+    @wedding_decorations = WeddingDecoration.where(user_id: current_user.id)
+    @wedding_services = WeddingService.where(user_id: current_user.id)
   end
 
   def groom
-    @groom_suits = GroomSuit.all
-    @groom_accessories = GroomAccessory.all
+    @groom_suits = GroomSuit.where(user_id: current_user.id)
+    @groom_accessories = GroomAccessory.where(user_id: current_user.id)
 
   end
 end
