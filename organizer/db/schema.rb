@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160828192033) do
+ActiveRecord::Schema.define(version: 20160828214651) do
 
   create_table "bride_accessories", force: :cascade do |t|
     t.string   "name"
     t.string   "color"
-    t.date     "size"
+    t.integer  "size"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20160828192033) do
 
   create_table "bride_beauticans", force: :cascade do |t|
     t.string   "name"
-    t.date     "fitting"
-    t.date     "meeting"
+    t.datetime "fitting"
+    t.datetime "meeting"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20160828192033) do
   create_table "bride_dresses", force: :cascade do |t|
     t.string   "model"
     t.integer  "size"
-    t.date     "fitting"
+    t.datetime "fitting"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 20160828192033) do
 
   create_table "bride_hairdressers", force: :cascade do |t|
     t.string   "name"
-    t.date     "fitting"
-    t.date     "meeting"
+    t.datetime "fitting"
+    t.datetime "meeting"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

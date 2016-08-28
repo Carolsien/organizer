@@ -1,4 +1,4 @@
-<h1>Pan Mlody</h1>
+<h1>Pan Młody</h1>
 <br><br>
 <h3><i><b>Garnitur</i></b></h3>
 
@@ -18,9 +18,9 @@
         <td><%= groom_suit.model %></td>
         <td><%= groom_suit.size %></td>
         <td><%= groom_suit.fitting %></td>
-        <td><%= link_to 'Pokaz', groom_suit %></td>
+        <td><%= link_to 'Pokaż', groom_suit %></td>
         <td><%= link_to 'Edytuj', edit_groom_suit_path(groom_suit) %></td>
-        <td><%= link_to 'Usun', groom_suit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', groom_suit, method: :delete, data: { confirm: 'Jesteś pewny/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -48,9 +48,9 @@
         <td><%= groom_accessory.name %></td>
         <td><%= groom_accessory.colour %></td>
         <td><%= groom_accessory.amount %></td>
-        <td><%= link_to 'Pokaz', groom_accessory %></td>
+        <td><%= link_to 'Pokaż', groom_accessory %></td>
         <td><%= link_to 'Edytuj', edit_groom_accessory_path(groom_accessory) %></td>
-        <td><%= link_to 'Usun', groom_accessory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', groom_accessory, method: :delete, data: { confirm: 'Jesteś pewny/a?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -58,4 +58,4 @@
 
 <br>
 
-<%= link_to 'Nowe akcesoria', new_groom_accessory_path %>
+<%= link_to 'Dodaj', new_groom_accessory_path %>
