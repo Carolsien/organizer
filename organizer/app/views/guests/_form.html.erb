@@ -26,6 +26,15 @@
     <%= f.text_area :description %>
   </div>
 
+  <div class="field">
+    <%= f.label :invitation_sent, 'Wyslano zaproszenie' %>
+    <%= f.check_box :invitation_sent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invitation_confirmed, 'Zaproszenie potwierdzono' %>
+    <%= f.check_box :invitation_confirmed %>
+  </div>
   <div class="actions">
     <%= f.submit 'Potwierdz' %>
   </div>

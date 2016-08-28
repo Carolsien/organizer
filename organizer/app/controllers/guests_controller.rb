@@ -29,7 +29,7 @@ class GuestsController < ApplicationController
 
     respond_to do |format|
       if @guest.save
-        format.html { redirect_to @guest, notice: 'Dane Gocia zostaly dodane.' }
+        format.html { redirect_to @guest, notice: 'Dane Goscia zostaly dodane.' }
         format.json { render :show, status: :created, location: @guest }
       else
         format.html { render :new }
@@ -70,6 +70,6 @@ class GuestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def guest_params
-      params.require(:guest).permit(:name, :subname, :description)
+      params.require(:guest).permit(:name, :subname, :description, :invitation_sent,:invitation_confirmed)
     end
 end
