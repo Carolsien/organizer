@@ -29,7 +29,7 @@ class ChurchBestsController < ApplicationController
 
     respond_to do |format|
       if @church_best.save
-        format.html { redirect_to @church_best, notice: 'Church best was successfully created.' }
+        format.html { redirect_to @church_best, notice: 'Dane świadka zostały dodane' }
         format.json { render :show, status: :created, location: @church_best }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ChurchBestsController < ApplicationController
   def update
     respond_to do |format|
       if @church_best.update(church_best_params)
-        format.html { redirect_to @church_best, notice: 'Church best was successfully updated.' }
+        format.html { redirect_to @church_best, notice: 'Dane świadka zostały edytowane.' }
         format.json { render :show, status: :ok, location: @church_best }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ChurchBestsController < ApplicationController
   def destroy
     @church_best.destroy
     respond_to do |format|
-      format.html { redirect_to church_bests_url, notice: 'Church best was successfully destroyed.' }
+      format.html { redirect_to church_bests_url, notice: 'Dane świadka zostały usunięte.' }
       format.json { head :no_content }
     end
   end

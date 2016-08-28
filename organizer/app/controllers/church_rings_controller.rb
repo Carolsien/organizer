@@ -29,7 +29,7 @@ class ChurchRingsController < ApplicationController
 
     respond_to do |format|
       if @church_ring.save
-        format.html { redirect_to @church_ring, notice: 'Church ring was successfully created.' }
+        format.html { redirect_to @church_ring, notice: 'Obrączki zostały dodane.' }
         format.json { render :show, status: :created, location: @church_ring }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ChurchRingsController < ApplicationController
   def update
     respond_to do |format|
       if @church_ring.update(church_ring_params)
-        format.html { redirect_to @church_ring, notice: 'Church ring was successfully updated.' }
+        format.html { redirect_to @church_ring, notice: 'Obrączki zostały edytowane.' }
         format.json { render :show, status: :ok, location: @church_ring }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ChurchRingsController < ApplicationController
   def destroy
     @church_ring.destroy
     respond_to do |format|
-      format.html { redirect_to church_rings_url, notice: 'Church ring was successfully destroyed.' }
+      format.html { redirect_to church_rings_url, notice: 'Obrączki zostały usunięte.' }
       format.json { head :no_content }
     end
   end

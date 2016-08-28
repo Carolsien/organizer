@@ -29,7 +29,7 @@ class GroomSuitsController < ApplicationController
 
     respond_to do |format|
       if @groom_suit.save
-        format.html { redirect_to @groom_suit, notice: 'Groom suit was successfully created.' }
+        format.html { redirect_to @groom_suit, notice: 'Garnitur został dodany.' }
         format.json { render :show, status: :created, location: @groom_suit }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class GroomSuitsController < ApplicationController
   def update
     respond_to do |format|
       if @groom_suit.update(groom_suit_params)
-        format.html { redirect_to @groom_suit, notice: 'Groom suit was successfully updated.' }
+        format.html { redirect_to @groom_suit, notice: 'Garnitur został edytowany.' }
         format.json { render :show, status: :ok, location: @groom_suit }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class GroomSuitsController < ApplicationController
   def destroy
     @groom_suit.destroy
     respond_to do |format|
-      format.html { redirect_to groom_suits_url, notice: 'Groom suit was successfully destroyed.' }
+      format.html { redirect_to groom_suits_url, notice: 'Garnitur został usunięty.' }
       format.json { head :no_content }
     end
   end

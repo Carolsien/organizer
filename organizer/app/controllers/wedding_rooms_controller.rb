@@ -29,7 +29,7 @@ class WeddingRoomsController < ApplicationController
 
     respond_to do |format|
       if @wedding_room.save
-        format.html { redirect_to @wedding_room, notice: 'Wedding room was successfully created.' }
+        format.html { redirect_to @wedding_room, notice: 'Dane sali zostały dodane.' }
         format.json { render :show, status: :created, location: @wedding_room }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class WeddingRoomsController < ApplicationController
   def update
     respond_to do |format|
       if @wedding_room.update(wedding_room_params)
-        format.html { redirect_to @wedding_room, notice: 'Wedding room was successfully updated.' }
+        format.html { redirect_to @wedding_room, notice: 'Dane sali zostały edytowane.' }
         format.json { render :show, status: :ok, location: @wedding_room }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class WeddingRoomsController < ApplicationController
   def destroy
     @wedding_room.destroy
     respond_to do |format|
-      format.html { redirect_to wedding_rooms_url, notice: 'Wedding room was successfully destroyed.' }
+      format.html { redirect_to wedding_rooms_url, notice: 'Dane sali zostały usunięte.' }
       format.json { head :no_content }
     end
   end

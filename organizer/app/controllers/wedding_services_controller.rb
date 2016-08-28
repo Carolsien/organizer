@@ -29,7 +29,7 @@ class WeddingServicesController < ApplicationController
 
     respond_to do |format|
       if @wedding_service.save
-        format.html { redirect_to @wedding_service, notice: 'Wedding service was successfully created.' }
+        format.html { redirect_to @wedding_service, notice: 'Obsługa sali została dodana.' }
         format.json { render :show, status: :created, location: @wedding_service }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class WeddingServicesController < ApplicationController
   def update
     respond_to do |format|
       if @wedding_service.update(wedding_service_params)
-        format.html { redirect_to @wedding_service, notice: 'Wedding service was successfully updated.' }
+        format.html { redirect_to @wedding_service, notice: 'Obsługa sali została edytowana.' }
         format.json { render :show, status: :ok, location: @wedding_service }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class WeddingServicesController < ApplicationController
   def destroy
     @wedding_service.destroy
     respond_to do |format|
-      format.html { redirect_to wedding_services_url, notice: 'Wedding service was successfully destroyed.' }
+      format.html { redirect_to wedding_services_url, notice: 'Obsługa sali została usunięta.' }
       format.json { head :no_content }
     end
   end
