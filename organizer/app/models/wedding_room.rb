@@ -1,0 +1,2 @@
+class WeddingRoom < ApplicationRecord
+end

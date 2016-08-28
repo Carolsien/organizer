@@ -1,0 +1,27 @@
+<%= form_for(wedding_room) do |f| %>
+  <% if wedding_room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wedding_room.errors.count, "error") %> prohibited this wedding_room from being saved:</h2>
+
+      <ul>
+      <% wedding_room.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name , 'Nazwa obiektu'%>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :adress, 'Adres' %>
+    <%= f.text_area :adress %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Potwierdz'%>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa obiektu:</strong>
+  <%= @wedding_room.name %>
+</p>
+
+<p>
+  <strong>Adres:</strong>
+  <%= @wedding_room.adress %>
+</p>
+
+<%= link_to 'Edytuj', edit_wedding_room_path(@wedding_room) %> |
+<%= link_to 'Wroc', wedding_rooms_path %>
