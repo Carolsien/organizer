@@ -16,9 +16,9 @@
       <tr>
         <td><%= church_ring.name %></td>
         <td><%= church_ring.size %></td>
-        <td><%= link_to 'Pokaz', church_ring %></td>
+        <td><%= link_to 'Pokaż', church_ring %></td>
         <td><%= link_to 'Edytuj', edit_church_ring_path(church_ring) %></td>
-        <td><%= link_to 'Usun', church_ring, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', church_ring, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'Nowe obraczki', new_church_ring_path %>
+<%= link_to 'Dodaj', new_church_ring_path %>

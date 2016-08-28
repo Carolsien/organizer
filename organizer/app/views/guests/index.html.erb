@@ -20,9 +20,9 @@
         <td><%= guest.subname %></td>
         <td><%= guest.description %></td>
         <td><%= (guest.invitation_sent ? "Wyslano" : "Nie wyslano") %> | <%= (guest.invitation_confirmed ? "Potwierdzono" : "Nie potwierdzono") %></td>
-        <td><%= link_to 'Pokaz', guest %></td>
+        <td><%= link_to 'Pokaż', guest %></td>
         <td><%= link_to 'Edytuj', edit_guest_path(guest) %></td>
-        <td><%= link_to 'Usun', guest, method: :delete, data: { confirm: 'Jestes pewny?' } %></td>
+        <td><%= link_to 'Usuń', guest, method: :delete, data: { confirm: 'Jestes pewny?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'Nowy Gosc', new_guest_path %>
+<%= link_to 'Dodaj', new_guest_path %>

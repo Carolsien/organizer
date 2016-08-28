@@ -16,9 +16,9 @@
       <tr>
         <td><%= church_best.name %></td>
         <td><%= church_best.surname %></td>
-        <td><%= link_to 'Pokaz', church_best %></td>
+        <td><%= link_to 'Pokaż', church_best %></td>
         <td><%= link_to 'Edytuj', edit_church_best_path(church_best) %></td>
-        <td><%= link_to 'Usun', church_best, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', church_best, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'Nowy swiadek', new_church_best_path %>
+<%= link_to 'Dodaj', new_church_best_path %>
