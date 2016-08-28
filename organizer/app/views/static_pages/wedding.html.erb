@@ -89,29 +89,3 @@
 <br>
 
 <%= link_to 'Dodaj', new_wedding_service_path %>
-
-<br><br>
-<h3><i><b>Obraczki</b></i></h3>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Nazwa modelu</th>
-      <th>Rozmiar</th>
-      <th colspan="3">Opcje</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @church_rings.each do |church_ring| %>
-      <tr>
-        <td><%= church_ring.name %></td>
-        <td><%= church_ring.size %></td>
-        <td><%= link_to 'Pokaz', church_ring %></td>
-        <td><%= link_to 'Edytuj', edit_church_ring_path(church_ring) %></td>
-        <td><%= link_to 'Usun', church_ring, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<%= link_to 'Dodaj', new_church_ring_path %>

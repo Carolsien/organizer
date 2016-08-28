@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  layout "static", only: [:help, :about, :bride, :church ]
+  layout "static", only: [:help, :about, :bride, :church, :wedding ]
   def help
   end
 
