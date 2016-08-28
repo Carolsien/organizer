@@ -1,0 +1,2 @@
+class ChurchCeremony < ApplicationRecord
+end

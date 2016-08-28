@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :church_ceremonies
   resources :guests
   resources :bride_beauticans
   resources :bride_hairdressers

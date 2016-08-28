@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @church_ceremony.name %>
+</p>
+
+<p>
+  <strong>Adres:</strong>
+  <%= @church_ceremony.adress %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @church_ceremony.date %>
+</p>
+
+<%= link_to 'Edytuj', edit_church_ceremony_path(@church_ceremony) %> |
+<%= link_to 'Wroc', church_ceremonies_path %>

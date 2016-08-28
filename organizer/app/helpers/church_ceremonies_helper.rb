@@ -1,0 +1,2 @@
+module ChurchCeremoniesHelper
+end
