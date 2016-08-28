@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @groom_accessory.name %>
+</p>
+
+<p>
+  <strong>Kolor:</strong>
+  <%= @groom_accessory.colour %>
+</p>
+
+<p>
+  <strong>Rozmiar/Ilosc:</strong>
+  <%= @groom_accessory.amount %>
+</p>
+
+<%= link_to 'Edytuj', edit_groom_accessory_path(@groom_accessory) %> |
+<%= link_to 'Wroc', groom_accessories_path %>

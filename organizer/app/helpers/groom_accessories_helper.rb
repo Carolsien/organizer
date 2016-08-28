@@ -1,0 +1,2 @@
+module GroomAccessoriesHelper
+end

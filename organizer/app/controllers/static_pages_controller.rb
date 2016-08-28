@@ -28,6 +28,7 @@ class StaticPagesController < ApplicationController
 
   def groom
     @groom_suits = GroomSuit.all
+    @groom_accessories = GroomAccessory.all
 
   end
 end
