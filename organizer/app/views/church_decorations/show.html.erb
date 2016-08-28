@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @church_decoration.name %>
+</p>
+
+<p>
+  <strong>Kolor:</strong>
+  <%= @church_decoration.colour %>
+</p>
+
+<p>
+  <strong>Ilosc:</strong>
+  <%= @church_decoration.amount %>
+</p>
+
+<%= link_to 'Edytuj', edit_church_decoration_path(@church_decoration) %> |
+<%= link_to 'Wroc', church_decorations_path %>

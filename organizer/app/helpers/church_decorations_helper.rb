@@ -1,0 +1,2 @@
+module ChurchDecorationsHelper
+end

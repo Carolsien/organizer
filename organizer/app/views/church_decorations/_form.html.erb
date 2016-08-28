@@ -1,0 +1,32 @@
+<%= form_for(church_decoration) do |f| %>
+  <% if church_decoration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(church_decoration.errors.count, "error") %> prohibited this church_decoration from being saved:</h2>
+
+      <ul>
+      <% church_decoration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name , 'Nazwa' %>
+    <%= f.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :colour, 'Kolor' %>
+    <%= f.text_field :colour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount, 'Ilosc' %>
+    <%= f.number_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Potwierdz' %>
+  </div>
+<% end %>

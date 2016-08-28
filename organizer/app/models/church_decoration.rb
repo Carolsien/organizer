@@ -1,0 +1,2 @@
+class ChurchDecoration < ApplicationRecord
+end

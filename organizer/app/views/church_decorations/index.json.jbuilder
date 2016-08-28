@@ -1,0 +1,1 @@
+json.array! @church_decorations, partial: 'church_decorations/church_decoration', as: :church_decoration

@@ -1,0 +1,110 @@
+<h1>Kosciol</h1>
+<br><br>
+<h3><i><b>Ceremonia</i></b></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Adres</th>
+      <th>Data ceremoni</th>
+      <th colspan="3">Opcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @church_ceremonies.each do |church_ceremony| %>
+      <tr>
+        <td><%= church_ceremony.name %></td>
+        <td><%= church_ceremony.adress %></td>
+        <td><%= church_ceremony.date %></td>
+        <td><%= link_to 'Pokaz', church_ceremony %></td>
+        <td><%= link_to 'Edytuj', edit_church_ceremony_path(church_ceremony) %></td>
+        <td><%= link_to 'Usun', church_ceremony, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Dodaj', new_church_ceremony_path %>
+<br><br>
+<h3><i><b>Dodatki </i></b></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Kolor</th>
+      <th>Ilosc</th>
+      <th colspan="3">Opcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @church_decorations.each do |church_decoration| %>
+      <tr>
+        <td><%= church_decoration.name %></td>
+        <td><%= church_decoration.colour %></td>
+        <td><%= church_decoration.amount %></td>
+        <td><%= link_to 'Pokaz', church_decoration %></td>
+        <td><%= link_to 'Edytuj', edit_church_decoration_path(church_decoration) %></td>
+        <td><%= link_to 'Usun', church_decoration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Dodaj', new_church_decoration_path %>
+<br><br>
+<h3><i><b>Swiadkowie</i></b></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Wizyta próbna</th>
+      <th>Wizyta w dniu ślubyu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bride_hairdressers.each do |bride_hairdresser| %>
+      <tr>
+        <td><%= bride_hairdresser.name %></td>
+        <td><%= bride_hairdresser.fitting %></td>
+        <td><%= bride_hairdresser.meeting %></td>
+        <td><%= link_to 'Pokaż', bride_hairdresser %></td>
+        <td><%= link_to 'Edytuj', edit_bride_hairdresser_path(bride_hairdresser) %></td>
+        <td><%= link_to 'Usuń', bride_hairdresser, method: :delete, data: { confirm: 'Czy na pewno usunąć?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Dodaj', new_bride_hairdresser_path %>
+<br><br>
+<h3><i><b>Kosmetyczka</b></i></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Wizyta próbna</th>
+      <th>Wizyta w dniu ślubu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bride_beauticans.each do |bride_beautican| %>
+      <tr>
+        <td><%= bride_beautican.name %></td>
+        <td><%= bride_beautican.fitting %></td>
+        <td><%= bride_beautican.meeting %></td>
+        <td><%= link_to 'Pokaż', bride_beautican %></td>
+        <td><%= link_to 'Edytuj', edit_bride_beautican_path(bride_beautican) %></td>
+        <td><%= link_to 'Usuń', bride_beautican, method: :delete, data: { confirm: 'Czy na pewno usunąć?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Dodaj', new_bride_beautican_path %>

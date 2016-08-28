@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :church_decorations
   resources :church_ceremonies
   resources :guests
   resources :bride_beauticans
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   get   'help'    => 'static_pages#help'
   get   'about'   => 'static_pages#about'
   get   'bride'   => 'static_pages#bride'
+  get   'church'   => 'static_pages#church'
   devise_scope :user do
   get '/users/sign_out' => 'devise/sessions#destroy'
 end
