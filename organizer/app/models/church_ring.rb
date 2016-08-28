@@ -1,0 +1,2 @@
+class ChurchRing < ApplicationRecord
+end

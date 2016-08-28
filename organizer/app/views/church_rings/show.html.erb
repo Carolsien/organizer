@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa modelu:</strong>
+  <%= @church_ring.name %>
+</p>
+
+<p>
+  <strong>Rozmiar:</strong>
+  <%= @church_ring.size %>
+</p>
+
+<%= link_to 'Edytuj', edit_church_ring_path(@church_ring) %> |
+<%= link_to 'Wroc', church_rings_path %>

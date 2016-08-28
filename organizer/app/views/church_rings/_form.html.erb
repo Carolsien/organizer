@@ -1,0 +1,27 @@
+<%= form_for(church_ring) do |f| %>
+  <% if church_ring.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(church_ring.errors.count, "error") %> prohibited this church_ring from being saved:</h2>
+
+      <ul>
+      <% church_ring.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name, 'Nazwa modelu' %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :size, 'Rozmiar' %>
+    <%= f.number_field :size %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Potwierdz' %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.array! @church_rings, partial: 'church_rings/church_ring', as: :church_ring

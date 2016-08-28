@@ -80,30 +80,27 @@
 </table>
 <%= link_to 'Dodaj', new_church_best_path %>
 <br><br>
-<h3><i><b>Kosmetyczka</b></i></h3>
+<h3><i><b>Obraczki</b></i></h3>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Nazwa</th>
-      <th>Wizyta próbna</th>
-      <th>Wizyta w dniu ślubu</th>
-      <th colspan="3"></th>
+      <th>Nazwa modelu</th>
+      <th>Rozmiar</th>
+      <th colspan="3">Opcje</th>
     </tr>
   </thead>
 
   <tbody>
-    <% @bride_beauticans.each do |bride_beautican| %>
+    <% @church_rings.each do |church_ring| %>
       <tr>
-        <td><%= bride_beautican.name %></td>
-        <td><%= bride_beautican.fitting %></td>
-        <td><%= bride_beautican.meeting %></td>
-        <td><%= link_to 'Pokaż', bride_beautican %></td>
-        <td><%= link_to 'Edytuj', edit_bride_beautican_path(bride_beautican) %></td>
-        <td><%= link_to 'Usuń', bride_beautican, method: :delete, data: { confirm: 'Czy na pewno usunąć?' } %></td>
+        <td><%= church_ring.name %></td>
+        <td><%= church_ring.size %></td>
+        <td><%= link_to 'Pokaz', church_ring %></td>
+        <td><%= link_to 'Edytuj', edit_church_ring_path(church_ring) %></td>
+        <td><%= link_to 'Usun', church_ring, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'Dodaj', new_bride_beautican_path %>
+<%= link_to 'Dodaj', new_church_ring_path %>
