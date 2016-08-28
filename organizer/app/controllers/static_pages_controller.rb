@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  layout "static", only: [:help, :about, :bride, :church, :wedding ]
+  layout "static", only: [:help, :about, :bride, :church, :wedding, :groom]
   def help
   end
 
@@ -24,5 +24,10 @@ class StaticPagesController < ApplicationController
     @wedding_rooms = WeddingRoom.all
     @wedding_decorations = WeddingDecoration.all
     @wedding_services = WeddingService.all
+  end
+
+  def groom
+    @groom_suits = GroomSuit.all
+
   end
 end

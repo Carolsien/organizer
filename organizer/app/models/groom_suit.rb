@@ -1,0 +1,2 @@
+class GroomSuit < ApplicationRecord
+end

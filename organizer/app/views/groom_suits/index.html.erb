@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Garnitur</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Rozmiar</th>
+      <th>Przymiarka</th>
+      <th colspan="3">Opcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @groom_suits.each do |groom_suit| %>
+      <tr>
+        <td><%= groom_suit.model %></td>
+        <td><%= groom_suit.size %></td>
+        <td><%= groom_suit.fitting %></td>
+        <td><%= link_to 'Pokaz', groom_suit %></td>
+        <td><%= link_to 'Edytuj', edit_groom_suit_path(groom_suit) %></td>
+        <td><%= link_to 'Usun', groom_suit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nowy garnitur', new_groom_suit_path %>

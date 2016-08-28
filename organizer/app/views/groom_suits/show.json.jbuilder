@@ -1,0 +1,1 @@
+json.partial! "groom_suits/groom_suit", groom_suit: @groom_suit

@@ -1,0 +1,2 @@
+module GroomSuitsHelper
+end

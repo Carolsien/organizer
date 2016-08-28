@@ -1,0 +1,1 @@
+json.array! @groom_suits, partial: 'groom_suits/groom_suit', as: :groom_suit

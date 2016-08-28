@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @groom_suit.model %>
+</p>
+
+<p>
+  <strong>Rozmiar:</strong>
+  <%= @groom_suit.size %>
+</p>
+
+<p>
+  <strong>Przymiarka:</strong>
+  <%= @groom_suit.fitting %>
+</p>
+
+<%= link_to 'Edytuj', edit_groom_suit_path(@groom_suit) %> |
+<%= link_to 'Wroc', groom_suits_path %>

@@ -1,0 +1,32 @@
+<%= form_for(groom_suit) do |f| %>
+  <% if groom_suit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(groom_suit.errors.count, "error") %> prohibited this groom_suit from being saved:</h2>
+
+      <ul>
+      <% groom_suit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :model, 'Model' %>
+    <%= f.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :size, 'Rozmiar' %>
+    <%= f.number_field :size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fitting, 'Przymiarki'%>
+    <%= f.datetime_select :fitting %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Potwierdz'%>
+  </div>
+<% end %>

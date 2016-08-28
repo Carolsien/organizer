@@ -17,7 +17,7 @@
         <li><%= link_to "Pomoc",   '/help' %></li>
         <% if user_signed_in? %>
           <li><%= link_to "Panna młoda", '/bride' %></li>
-          <li><%= link_to "Pan młody", '#' %></li>
+          <li><%= link_to "Pan młody", groom_path %></li>
           <li><%= link_to "Kościół", church_path %></li>
           <li><%= link_to "Wesele", wedding_path %></li>
           <li><%= link_to "Goście", guests_path %></li>
