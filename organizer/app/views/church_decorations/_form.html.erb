@@ -1,7 +1,7 @@
 <%= form_for(church_decoration) do |f| %>
   <% if church_decoration.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(church_decoration.errors.count, "error") %> prohibited this church_decoration from being saved:</h2>
+      <h2><%= pluralize(church_decoration.errors.count, "error") %> Nie można dodać elementu</h2>
 
       <ul>
       <% church_decoration.errors.full_messages.each do |message| %>

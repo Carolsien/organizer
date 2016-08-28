@@ -1,7 +1,7 @@
 <%= form_for(church_best) do |f| %>
   <% if church_best.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(church_best.errors.count, "error") %> prohibited this church_best from being saved:</h2>
+      <h2><%= pluralize(church_best.errors.count, "error") %> Nie można dodać elementu</h2>
 
       <ul>
       <% church_best.errors.full_messages.each do |message| %>
@@ -22,6 +22,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'Potwierdz' %>
+    <%= f.submit 'Potwierdź' %>
   </div>
 <% end %>

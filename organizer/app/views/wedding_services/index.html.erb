@@ -18,9 +18,9 @@
         <td><%= wedding_service.who %></td>
         <td><%= wedding_service.name %></td>
         <td><%= wedding_service.contact %></td>
-        <td><%= link_to 'Pokaz', wedding_service %></td>
+        <td><%= link_to 'Pokaż', wedding_service %></td>
         <td><%= link_to 'Edytuj', edit_wedding_service_path(wedding_service) %></td>
-        <td><%= link_to 'Usun', wedding_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', wedding_service, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'Nowa obsluga sali', new_wedding_service_path %>
+<%= link_to 'Dodaj', new_wedding_service_path %>

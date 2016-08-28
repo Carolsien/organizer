@@ -16,9 +16,9 @@
       <tr>
         <td><%= wedding_room.name %></td>
         <td><%= wedding_room.adress %></td>
-        <td><%= link_to 'Pokaz', wedding_room %></td>
+        <td><%= link_to 'Pokaż', wedding_room %></td>
         <td><%= link_to 'Edytuj', edit_wedding_room_path(wedding_room) %></td>
-        <td><%= link_to 'Usun', wedding_room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usuń', wedding_room, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'Nowa Sala Weselna', new_wedding_room_path %>
+<%= link_to 'Dodaj', new_wedding_room_path %>

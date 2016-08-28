@@ -1,7 +1,7 @@
 <%= form_for(bride_accessory) do |f| %>
   <% if bride_accessory.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(bride_accessory.errors.count, "error") %> prohibited this bride_accessory from being saved:</h2>
+      <h2><%= pluralize(bride_accessory.errors.count, "error") %> Nie można dodać elementu</h2>
 
       <ul>
       <% bride_accessory.errors.full_messages.each do |message| %>
@@ -27,6 +27,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Zatwierdź"%>
+    <%= f.submit "Potwierdź"%>
   </div>
 <% end %>

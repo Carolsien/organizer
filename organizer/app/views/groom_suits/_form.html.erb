@@ -1,7 +1,7 @@
 <%= form_for(groom_suit) do |f| %>
   <% if groom_suit.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(groom_suit.errors.count, "error") %> prohibited this groom_suit from being saved:</h2>
+      <h2><%= pluralize(groom_suit.errors.count, "error") %>Nie można dodać elementu</h2>
 
       <ul>
       <% groom_suit.errors.full_messages.each do |message| %>
