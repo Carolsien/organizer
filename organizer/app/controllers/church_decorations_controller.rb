@@ -29,7 +29,7 @@ class ChurchDecorationsController < ApplicationController
 
     respond_to do |format|
       if @church_decoration.save
-        format.html { redirect_to @church_decoration, notice: 'Church decoration was successfully created.' }
+        format.html { redirect_to @church_decoration, notice: 'Dekoracja zostały dodana.' }
         format.json { render :show, status: :created, location: @church_decoration }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ChurchDecorationsController < ApplicationController
   def update
     respond_to do |format|
       if @church_decoration.update(church_decoration_params)
-        format.html { redirect_to @church_decoration, notice: 'Church decoration was successfully updated.' }
+        format.html { redirect_to @church_decoration, notice: 'Dekoracja zostały edytowana.' }
         format.json { render :show, status: :ok, location: @church_decoration }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ChurchDecorationsController < ApplicationController
   def destroy
     @church_decoration.destroy
     respond_to do |format|
-      format.html { redirect_to church_decorations_url, notice: 'Church decoration was successfully destroyed.' }
+      format.html { redirect_to church_decorations_url, notice: 'Dekoracja zostały usunięta.' }
       format.json { head :no_content }
     end
   end

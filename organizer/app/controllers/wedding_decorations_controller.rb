@@ -29,7 +29,7 @@ class WeddingDecorationsController < ApplicationController
 
     respond_to do |format|
       if @wedding_decoration.save
-        format.html { redirect_to @wedding_decoration, notice: 'Wedding decoration was successfully created.' }
+        format.html { redirect_to @wedding_decoration, notice: 'Dekoracja została dodane.' }
         format.json { render :show, status: :created, location: @wedding_decoration }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class WeddingDecorationsController < ApplicationController
   def update
     respond_to do |format|
       if @wedding_decoration.update(wedding_decoration_params)
-        format.html { redirect_to @wedding_decoration, notice: 'Wedding decoration was successfully updated.' }
+        format.html { redirect_to @wedding_decoration, notice: 'Dekoracja została edytowane.' }
         format.json { render :show, status: :ok, location: @wedding_decoration }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class WeddingDecorationsController < ApplicationController
   def destroy
     @wedding_decoration.destroy
     respond_to do |format|
-      format.html { redirect_to wedding_decorations_url, notice: 'Wedding decoration was successfully destroyed.' }
+      format.html { redirect_to wedding_decorations_url, notice: 'Dekoracja została usunięte.' }
       format.json { head :no_content }
     end
   end
