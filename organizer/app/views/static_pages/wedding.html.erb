@@ -29,7 +29,7 @@
 <%= link_to 'Dodaj', new_wedding_room_path %>
 
 <br><br>
-<h3><i><b>Dodatki </i></b></h3>
+<h3><i><b>Dekoracje </i></b></h3>
 
 <table class="table">
   <thead>
@@ -42,19 +42,23 @@
   </thead>
 
   <tbody>
-    <% @church_decorations.each do |church_decoration| %>
+    <% @wedding_decorations.each do |wedding_decoration| %>
       <tr>
-        <td><%= church_decoration.name %></td>
-        <td><%= church_decoration.colour %></td>
-        <td><%= church_decoration.amount %></td>
-        <td><%= link_to 'Pokaz', church_decoration %></td>
-        <td><%= link_to 'Edytuj', edit_church_decoration_path(church_decoration) %></td>
-        <td><%= link_to 'Usun', church_decoration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= wedding_decoration.name %></td>
+        <td><%= wedding_decoration.colour %></td>
+        <td><%= wedding_decoration.amount %></td>
+        <td><%= link_to 'Pokaz', wedding_decoration %></td>
+        <td><%= link_to 'Edytuj', edit_wedding_decoration_path(wedding_decoration) %></td>
+        <td><%= link_to 'Usun', wedding_decoration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Dodaj', new_church_decoration_path %>
+
+<br>
+
+<%= link_to 'Dodaj', new_wedding_decoration_path %>
+
 <br><br>
 <h3><i><b>Swiadkowie</i></b></h3>
 

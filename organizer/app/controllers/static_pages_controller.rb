@@ -22,5 +22,6 @@ class StaticPagesController < ApplicationController
 
   def wedding
     @wedding_rooms = WeddingRoom.all
+    @wedding_decorations = WeddingDecoration.all
   end
 end

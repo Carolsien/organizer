@@ -1,0 +1,2 @@
+class WeddingDecoration < ApplicationRecord
+end

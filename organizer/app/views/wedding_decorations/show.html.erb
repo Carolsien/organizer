@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @wedding_decoration.name %>
+</p>
+
+<p>
+  <strong>Kolor:</strong>
+  <%= @wedding_decoration.colour %>
+</p>
+
+<p>
+  <strong>Ilosc:</strong>
+  <%= @wedding_decoration.amount %>
+</p>
+
+<%= link_to 'Edytuj', edit_wedding_decoration_path(@wedding_decoration) %> |
+<%= link_to 'Wroc', wedding_decorations_path %>
