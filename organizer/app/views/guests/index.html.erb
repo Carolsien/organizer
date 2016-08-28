@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Goscie</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Imie</th>
+      <th>Nazwisko</th>
+      <th>Dane osoby towarzyszacej</th>
+      <th colspan="3">Opcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guests.each do |guest| %>
+      <tr>
+        <td><%= guest.name %></td>
+        <td><%= guest.subname %></td>
+        <td><%= guest.description %></td>
+        <td><%= link_to 'Pokaz', guest %></td>
+        <td><%= link_to 'Edytuj', edit_guest_path(guest) %></td>
+        <td><%= link_to 'Usun', guest, method: :delete, data: { confirm: 'Jestes pewny?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nowy Gosc', new_guest_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imie:</strong>
+  <%= @guest.name %>
+</p>
+
+<p>
+  <strong>Nazwisko:</strong>
+  <%= @guest.subname %>
+</p>
+
+<p>
+  <strong>Osoba Towarzyszaca:</strong>
+  <%= @guest.description %>
+</p>
+
+<%= link_to 'Edytuj', edit_guest_path(@guest) %> |
+<%= link_to 'Wroc', guests_path %>
