@@ -20,7 +20,7 @@
         <td><%= church_ceremony.date %></td>
         <td><%= link_to 'Pokaz', church_ceremony %></td>
         <td><%= link_to 'Edytuj', edit_church_ceremony_path(church_ceremony) %></td>
-        <td><%= link_to 'Usun', church_ceremony, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usun', church_ceremony, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -48,7 +48,7 @@
         <td><%= church_decoration.amount %></td>
         <td><%= link_to 'Pokaz', church_decoration %></td>
         <td><%= link_to 'Edytuj', edit_church_decoration_path(church_decoration) %></td>
-        <td><%= link_to 'Usun', church_decoration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usun', church_decoration, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -57,7 +57,7 @@
 <br><br>
 <h3><i><b>Swiadkowie</i></b></h3>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Imie</th>
@@ -73,7 +73,7 @@
         <td><%= church_best.surname %></td>
         <td><%= link_to 'Pokaz', church_best %></td>
         <td><%= link_to 'Edytuj', edit_church_best_path(church_best) %></td>
-        <td><%= link_to 'Usun', church_best, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usun', church_best, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -98,7 +98,7 @@
         <td><%= church_ring.size %></td>
         <td><%= link_to 'Pokaz', church_ring %></td>
         <td><%= link_to 'Edytuj', edit_church_ring_path(church_ring) %></td>
-        <td><%= link_to 'Usun', church_ring, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Usun', church_ring, method: :delete, data: { confirm: 'Jesteś pewny/a' } %></td>
       </tr>
     <% end %>
   </tbody>

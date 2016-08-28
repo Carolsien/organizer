@@ -59,4 +59,4 @@ en:
       not_locked: "zostało niezablokowane"
       not_saved:
         one: "1 błąd zapobiegł %{resource} zapisaniu"
-        other: "%{count} błędy zapobiegły %{resource} zapisaniu"
+        other: "%{count} błędy/błędów zapobiegły %{resource} zapisaniu"
