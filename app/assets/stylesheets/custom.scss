@@ -20,20 +20,20 @@ body, html {
   background-size: cover;
 }
 .img-1 {
-  background-image: url("rings.jpg");
+  background-image: image-url("rings.jpg");
   min-height: 50%;
 }
 .img-2 {
-  background-image: url("flowers.jpg");
+  background-image: image-url("flowers.jpg");
   min-height: 50%;
 }
 .img-3 {
-  background-image: url("church.jpg");
+  background-image: image-url("church.jpg");
   min-height: 50%;
 }
 
 .img-4{
-  background-image: url("floral-pattern.jpg");
+  background-image: image-url("floral-pattern.jpg");
   min-height: 80%;
   opacity: 0.9;
 }
